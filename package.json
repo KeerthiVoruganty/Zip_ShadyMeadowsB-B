@@ -1,0 +1,19 @@
+{
+    "name": "shady-meadows-automation",
+    "version": "1.0.0",
+    "description": "Work sample automation tests for the Shady Meadows B&B website using the Playwright test runner.",
+    "license": "MIT",
+    "scripts": {
+        "test": "playwright test",
+        "lint": "eslint ."
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.38.0",
+        "@types/node": "^24.5.2",
+        "eslint": "^8.56.0",
+        "eslint-plugin-playwright": "^0.7.1"
+    },
+    "dependencies": {
+        "playwright-bdd": "^8.4.1"
+    }
+}
