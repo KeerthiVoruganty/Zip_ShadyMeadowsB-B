@@ -8,10 +8,10 @@ on:
     - cron: "0 20 * * 0-4"   # Runs at 7:00 AM AEDT (20:00 UTC) every Monday to Friday
   push:
     branches:
-      - master  
+      - main  
   pull_request:
     branches:
-      - master  # Run tests when a pull request is created or updated
+      - main  # Run tests when a pull request is created or updated
   workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
