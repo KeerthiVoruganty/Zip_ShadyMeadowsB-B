@@ -91,6 +91,10 @@ export class Rooms {
         ).toBeHidden();
         break;
       }
+      default: {
+        console.log("Invalid choice");
+        break;
+      }
     }
   }
 
@@ -109,6 +113,10 @@ export class Rooms {
       case "Suite": {
         console.log("Clicking Book Now");
         await this.bookSuiteRoomButton.click();
+        break;
+      }
+      default: {
+        console.log("Invalid choice");
         break;
       }
     }

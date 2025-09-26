@@ -1,8 +1,8 @@
 {
   "Double::checkOut": "2025-09-27",
   "Double::checkIn": "2025-09-25",
-  "Single::checkIn": "2025-09-25",
-  "Single::checkOut": "2025-09-27",
-  "Suite::checkIn": "2025-09-25",
-  "Suite::checkOut": "2025-09-27"
+  "Single::checkIn": "2025-09-26",
+  "Single::checkOut": "2025-09-28",
+  "Suite::checkIn": "2025-09-26",
+  "Suite::checkOut": "2025-09-28"
 }

@@ -42,7 +42,7 @@ Then("user checks Availability", async function ({ roomsPage }) {
 When(
   "user books {string} room",
   async function ({ roomsPage }, roomName: string) {
-    console.log("Booking room");
+    console.log("Booking room for", roomName);
     await roomsPage.bookRooms(roomName);
   },
 );
