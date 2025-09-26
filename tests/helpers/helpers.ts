@@ -16,22 +16,14 @@ class Helper {
   }
 
   async getNextDaysDateFormatted(days: number): Promise<string> {
-    const today = new Date();
-    let day = (today.getDate() + days).toString();
-    let month = (today.getMonth() + 1).toString();
-    let year = today.getFullYear();
-    if (today.getDate() < 10) {
-      day = "0" + day;
-    }
-    if (today.getMonth() < 9) {
-      month = "0" + month;
-    }
-    if (parseInt(month) > 12) {
-      month = "0" + (parseInt(month) - 12).toString();
-      year = today.getFullYear() + 1;
-    }
-
-    return `${day}/${month}/${year}`;
+    const now = new Date();
+    const d = new Date(now.getFullYear(), now.getMonth(), now.getDate() + days);
+  
+    const dd = String(d.getDate()).padStart(2, '0');
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const yyyy = d.getFullYear();
+  
+    return `${dd}/${mm}/${yyyy}`;
   }
 
   async getRandomString(length: number) {
