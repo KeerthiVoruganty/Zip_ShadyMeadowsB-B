@@ -70,7 +70,7 @@ ZIP_SHADYMEADOWSB-B
 
    ```sh
    yarn lint
-   to fix them - yarm lint --fix
+   to fix them - yarn lint --fix
    ```
 
 ## GitHub Actions CI
